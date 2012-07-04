@@ -1,0 +1,16 @@
+[
+  {
+    "pk": 1, 
+    "model": "testappp.biomodel", 
+    "fields": {
+      "bio": "\u0421\u0442\u0443\u0434\u0435\u043d\u0442", 
+      "name": "\u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d", 
+      "lastname": "\u0421\u043d\u0456\u0433\u0438\u0440", 
+      "other_contacts": "\u041d\u0435\u043c\u0430\u0454", 
+      "date_of_birth": "1989-03-28", 
+      "skype": "konstantin.snigyr", 
+      "jabber": "konstantin.lex@gmail.com", 
+      "email": "konstantin.lex@gmail.com"
+    }
+  }
+]
