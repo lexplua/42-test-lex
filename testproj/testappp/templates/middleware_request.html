@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block title  %}
+    42 Coffee Cups Test Assignment
+{% endblock %}
+
+
+{% block content %}
+    <div class="page-header"> <h2> Requests </h2> </div>
+
+    <table class="table table-striped">
+    <thead>
+    <tr>
+        <th>
+            Time
+        </th>
+        <th>
+              Request body
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+      {% for record in requests %}
+          <tr>
+              <td>
+                    {{ record.create_data|date:"d/m/Y H:i" }}
+              </td>
+              <td>
+                                  {{ record.body }}
+                            </td>
+          </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}

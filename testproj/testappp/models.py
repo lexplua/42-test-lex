@@ -23,3 +23,10 @@ class BioModel(models.Model):
     def get_fields(self):
         # make a list of field/values.
         return [(field, field.value_to_string(self).encode("utf-8")) for field in BioModel._meta.fields]
+
+class RequestModel(models.Model):
+    create_data = models.DateTimeField(auto_now_add=True)
+    body = models.TextField()
+
+    class Meta:
+        ordering = ['-create_data']
