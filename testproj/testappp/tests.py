@@ -4,6 +4,7 @@ from django.test import TestCase
 from testproj.testappp.models import BioModel
 from datetime import datetime
 from random import randrange,choice
+from django.conf import settings
 
 class BasicTest(TestCase):
     def test_check_data(self):
@@ -25,3 +26,10 @@ class MiddlewareTest(TestCase):
         self.assertEqual(resp.status_code,200)
         for i in data:
             self.assertIn(i, resp.content)
+
+class ContextProcessorTest(TestCase):
+    def test_check_data(self):
+        resp = self.client.get('/')
+        self.assertEqual(resp.status_code, 200)
+        self.assertTrue('settings' in resp.context)
+        self.assertEqual(settings,resp.context['settings'])
