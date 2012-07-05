@@ -30,3 +30,6 @@ class RequestModel(models.Model):
 
     class Meta:
         ordering = ['-create_data']
+
+class DBLogRecord(models.Model):
+    body = models.CharField(max_length=256)
