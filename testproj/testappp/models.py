@@ -13,6 +13,7 @@ class BioModel(models.Model):
     jabber = models.CharField(max_length=50)
     skype = models.CharField(max_length=50)
     other_contacts = models.TextField()
+    photo = models.ImageField(upload_to="photo")
 
     class Meta:
         verbose_name = _('Bio')

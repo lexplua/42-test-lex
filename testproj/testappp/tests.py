@@ -6,6 +6,7 @@ from datetime import datetime
 from random import randrange,choice
 from django.conf import settings
 from django.contrib.auth.models import User
+import os
 
 class BasicTest(TestCase):
     def test_check_data(self):
@@ -61,3 +62,34 @@ class SignalHandlerTest(TestCase):
         self.assertTrue(DBLogRecord.objects.filter(body__exact = "BioModel changed pk = {0}".format(bio.pk)).count())
         bio.delete()
         self.assertTrue(DBLogRecord.objects.filter(body__exact = "BioModel deleted").count())
+
+class FormTest(TestCase):
+    def login_test(self):
+        resp = self.client.get('/')
+        self.assertIn('Login',resp.content)
+        self.assertNotIn('Edit',resp.content)
+        self.client.login('lex','123123')
+        resp = self.client.get('/')
+        self.assertNotIn('Login',resp.content)
+        self.assertIn('Edit',resp.content)
+
+    def edit_form_test(self):
+        data_dict={
+            'name':'test',
+            'lastname':'testlastname',
+            'bio':'testbio',
+            'date_of_birth':'11.11.2013',
+            'email':'testemail',
+            'jabber':'testjabber',
+            'skype':'testskype',
+            'other_contacts':'test other contacts',
+            'photo':open(os.path.join(settings.MEDIA_ROOT,'me.jpg'))
+        }
+        self.client.post('/editbio/',data_dict)
+        resp = self.client.get('/')
+        for data in data_dict.values()[:-1]:
+            self.assertIn(data,resp.content)
+
+    def test_check_data(self):
+        self.login_test()
+        self.edit_form_test()
