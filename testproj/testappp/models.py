@@ -21,5 +21,9 @@ class BioModel(models.Model):
         return  self.name
 
     def get_fields(self):
-        # make a list of field/values.
-        return [(field, field.value_to_string(self).encode("utf-8")) for field in BioModel._meta.fields]
+
+        def fix_string(field):
+            return field.value_to_string(self).encode("utf-8")
+
+        meta_fields = BioModel._meta.fields
+        return [(field, fix_string(field)) for field in meta_fields]
