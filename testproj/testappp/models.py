@@ -65,3 +65,4 @@ try:
         post_save.connect(save_handler, model)
 except Exception,e:
     pass #error on syncdb
+
