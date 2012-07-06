@@ -45,18 +45,18 @@ def save_handler(sender, instance, created, **kwargs):
     if created:
 
         log = DBLogRecord(
-            body=' '.join((instance.__class__.__name__, "added", "pk = {0}".format(instance.pk)))
+            body="{0} added pk = {1}".format(instance.__class__.__name__,instance.pk)
         )
     else:
         log = DBLogRecord(
-            body=' '.join((instance.__class__.__name__, "changed", "pk = {0}".format(instance.pk)))
+            body="{0} changed pk = {1}".format(instance.__class__.__name__,instance.pk)
         )
     log.save()
 
 
 def delete_handler(sender, instance, **kwargs):
     log = DBLogRecord(
-        body=' '.join((instance.__class__.__name__, "deleted"))
+        body="{0} deleted".format(instance.__class__.__name__)
     )
     log.save()
 
