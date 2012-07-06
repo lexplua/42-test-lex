@@ -59,7 +59,9 @@ def delete_handler(sender, instance, **kwargs):
         body="{0} deleted".format(instance.__class__.__name__)
     )
     log.save()
-
-for model in [x.model_class() for x in ContentType.objects.all()]:
-    pre_delete.connect(delete_handler, model)
-    post_save.connect(save_handler, model)
+try:
+    for model in [x.model_class() for x in ContentType.objects.all()]:
+        pre_delete.connect(delete_handler, model)
+        post_save.connect(save_handler, model)
+except Exception,e:
+    pass #error on syncdb
