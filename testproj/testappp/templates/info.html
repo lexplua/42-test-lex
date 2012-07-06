@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load test_tags %}
 
 {% block title  %}
     42 Coffee Cups Test Assignment
@@ -8,8 +8,8 @@
 
 {% block content %}
     <div class="page-header">
-        <h2>42 Coffee Cups Test Assignment
-                <a style="font-size: medium;" href="{% url edit-bio %}">Edit</a>
+        <h2 >42 Coffee Cups Test Assignment
+                <a class="offset4" style="font-size: medium;" href="{% url edit-bio %}">Edit</a> {% if user.is_authenticated %}(<a style="font-size: medium;" href="{% edit_link user %}">admin</a>){% endif %}
         </h2>
     </div>
 
