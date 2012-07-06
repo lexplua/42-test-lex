@@ -66,12 +66,8 @@ class SignalHandlerTest(TestCase):
 class FormTest(TestCase):
     def login_test(self):
         resp = self.client.get('/')
-        self.assertIn('Login',resp.content)
-        self.assertNotIn('Edit',resp.content)
-        self.client.login(username='lex',password='123123')
-        resp = self.client.get('/')
-        self.assertNotIn('Login',resp.content)
         self.assertIn('Edit',resp.content)
+        self.client.login(username='lex',password='123123')
 
     def edit_form_test(self):
         data_dict={
