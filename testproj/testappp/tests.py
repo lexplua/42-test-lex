@@ -90,3 +90,15 @@ class FormTest(TestCase):
     def test_check_data(self):
         self.login_test()
         self.edit_form_test()
+
+class TagTest(TestCase):
+    def login_test(self):
+        resp = self.client.get('/')
+        self.assertIn('Edit',resp.content)
+        self.client.login(username='lex',password='123123')
+
+    def test_check_data(self):
+        self.login_test()
+        resp = self.client.get("/")
+        self.assertEqual(resp.status_code,200)
+        self.assertIn('/admin/auth/user/1/',resp.content)
