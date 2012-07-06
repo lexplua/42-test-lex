@@ -1,10 +1,99 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+
+{% block content %}
+    <br/>
+    {%  if form.non_field_errors   %}
+        <div class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            {{ form.non_field_errors  }}
+        </div>
+    {% endif %}
+
+    <form method="post" action="." class="form-horizontal" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset >
+            <div class="row">
+                <div class="span4">
+                    <div class="control-group{% if form.name.errors %} error {% endif %}">
+                        <label class="control-label" for="id_name">Name: </label>
+                        <div class="controls" >
+                            {{ form.name }}
+                            <span class="help-inline">{% if form.name.errors %} {{ form.name.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+                    <div class="control-group {% if form.lastname.errors %} error {% endif %}">
+                        <label class="control-label" for="id_lastname">Last name: </label>
+                        <div class="controls">
+                            {{ form.lastname }}
+                            <span class="help-inline">{% if form.lastname.errors %} {{ form.lastname.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group {% if form.date_of_birth.errors %} error {% endif %}">
+                        <label class="control-label" for="id_date_of_birth">Date of birth: </label>
+                        <div class="controls">
+                            {{ form.date_of_birth }}
+                            <span class="help-inline">{% if form.date_of_birth.errors %} {{ form.date_of_birth.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group {% if form.photo.errors %} error {% endif %}">
+                        <label class="control-label" for="id_photo">Date of birth:</label>
+                        <div class="controls">
+                            {{ form.photo }}
+                            <span class="help-inline">{% if form.photo.errors %} {{ form.photo.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+                    <div class="control-group {% if form.photo.errors %} error {% endif %}">
+                        <img src="{{ form.photo.value.url }}" alt="" width="256" style="padding-left: 150px;">
+                    </div>
+                </div>
+
+
+                <div class="span5">
+                    <div class="control-group {% if form.email.errors %} error {% endif %}">
+                        <label class="control-label" for="id_email">Email: </label>
+                        <div class="controls">
+                            {{ form.email }}
+                            <span class="help-inline">{% if form.email.errors %} {{ form.email.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+                    <div class="control-group {% if form.jabber.errors %} error {% endif %}">
+                        <label class="control-label" for="id_jabber">Jabber: </label>
+                        <div class="controls">
+                            {{ form.jabber }}
+                            <span class="help-inline">{% if form.jabber.errors %} {{ form.jabber.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+                    <div class="control-group {% if form.skype.errors %} error {% endif %}">
+                        <label class="control-label" for="id_skype">Skype: </label>
+                        <div class="controls">
+                            {{ form.skype }}
+                            <span class="help-inline">{% if form.skype.errors %} {{ form.skype.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group {% if form.other_contacts.errors %} error {% endif %}">
+                        <label class="control-label" for="id_other_contacts">Other contacts:</label>
+                        <div class="controls">
+                            <textarea rows="8" style="width: 460px;" cols="280" name="other_contacts" id="id_other_contacts">{{ form.other_contacts.value }}</textarea>
+                            <span class="help-inline">{% if form.other_contacts.errors %} {{ form.other_contacts.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+                    <div class="control-group {% if form.bio.errors %} error {% endif %}">
+                        <label class="control-label" for="id_bio">Bio:</label>
+                        <div class="controls">
+                            <textarea rows="8" style="width: 460px;" cols="280" name="bio" id="id_bio">{{ form.bio.value }}</textarea>
+                            <span class="help-inline">{% if form.bio.errors %} {{ form.bio.errors }}{% endif %}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="btn" type="submit">Сохранить</button>
+            </div>
+        </fieldset>
+    </form>
+
+{% endblock %}

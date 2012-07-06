@@ -7,70 +7,81 @@
 
 
 {% block content %}
-    <div class="page-header"><h2>42 Coffee Cups Test Assignment</h2></div>
+    <div class="page-header">
+        <h2>42 Coffee Cups Test Assignment
+                <a style="font-size: medium;" href="{% url edit-bio %}">Edit</a>
+        </h2>
+    </div>
 
 
 
     <div class="row">
         {% if bio %}
-        <div class="span6">
-            <dl class="dl-horizontal">
-                <dt>
-                    Name:
-                </dt>
-                <dd>
-                    {{ bio.name }}
-                </dd>
-                <dt>
-                    Last name:
-                </dt>
-                <dd>
-                    {{ bio.lastname }}
-                </dd>
-                <dt>
-                    Date of birth:
-                </dt>
-                <dd>
-                    {{ bio.date_of_birth|date:"Y-m-d" }}
-                </dd>
-                <dt>
-                    Bio:
-                </dt>
-                <dd>
-                    {{ bio.bio }}
-                </dd>
-            </dl>
-        </div>
+            <div class="span4">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Name:
+                    </dt>
+                    <dd>
+                        {{ bio.name }}
+                    </dd>
+                    <dt>
+                        Last name:
+                    </dt>
+                    <dd>
+                        {{ bio.lastname }}
+                    </dd>
+                    <dt>
+                        Date of birth:
+                    </dt>
+                    <dd>
+                        {{ bio.date_of_birth|date:"Y-m-d" }}
+                    </dd>
+                    <dt>
+                        Photo:
+                    </dt>
+                    <dd>
+                        <img width="256" style="padding-left: -100px;padding-top: 50px" src="{{ bio.photo.url }}" alt="{{ bio.photo.url }}" />
+                    </dd>
+
+                </dl>
+            </div>
 
 
-        <div class="span6">
-            <dl class="dl-horizontal">
-                            <dt>
-                                Email:
-                            </dt>
-                            <dd>
-                                {{ bio.email }}
-                            </dd>
-                            <dt>
-                                Jabber:
-                            </dt>
-                            <dd>
-                                {{ bio.jabber }}
-                            </dd>
-                            <dt>
-                                Skype:
-                            </dt>
-                            <dd>
-                                {{ bio.skype }}
-                            </dd>
-                            <dt>
-                                Other contacts:
-                            </dt>
-                            <dd>
-                                {{ bio.other_contacts }}
-                            </dd>
-                        </dl>
-        </div>
+            <div class="span5">
+                <dl class="dl-horizontal">
+                    <dt>
+                        Email:
+                    </dt>
+                    <dd>
+                        {{ bio.email }}
+                    </dd>
+                    <dt>
+                        Jabber:
+                    </dt>
+                    <dd>
+                        {{ bio.jabber }}
+                    </dd>
+                    <dt>
+                        Skype:
+                    </dt>
+                    <dd>
+                        {{ bio.skype }}
+                    </dd>
+                    <dt>
+                        Bio:
+                    </dt>
+                    <dd>
+                        {{ bio.bio }}
+                    </dd>
+                    <dt>
+                        Other contacts:
+                    </dt>
+                    <dd>
+                        {{ bio.other_contacts }}
+                    </dd>
+                </dl>
+            </div>
 
         {% endif %}
     </div>

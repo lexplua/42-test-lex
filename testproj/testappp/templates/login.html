@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+    <br/>
+    {% if form.errors %}
+
+        <div class="alert alert-error">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Неверный логин или пароль !</strong>
+        </div>
+    {% endif %}
+
+    <form method="post" action="{% url django.contrib.auth.views.login %}" class="form-horizontal">
+    {% csrf_token %}
+        <fieldset>
+        <div class="control-group">
+            <label class="control-label" for="id_username">Логин</label>
+            <div class="controls">
+                {{ form.username }}
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="id_password">Пароль</label>
+            <div class="controls">
+                {{ form.password }}
+            </div>
+        </div>
+        <div class="form-actions">
+            <button class="btn" type="submit">Login</button>
+        </div>
+        <input type="hidden" name="next" value="{{ next }}" />
+        </fieldset>
+    </form>
+
+{% endblock %}
