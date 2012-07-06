@@ -68,7 +68,7 @@ class FormTest(TestCase):
         resp = self.client.get('/')
         self.assertIn('Login',resp.content)
         self.assertNotIn('Edit',resp.content)
-        self.client.login('lex','123123')
+        self.client.login(username='lex',password='123123')
         resp = self.client.get('/')
         self.assertNotIn('Login',resp.content)
         self.assertIn('Edit',resp.content)
@@ -78,17 +78,18 @@ class FormTest(TestCase):
             'name':'test',
             'lastname':'testlastname',
             'bio':'testbio',
-            'date_of_birth':'11.11.2013',
-            'email':'testemail',
-            'jabber':'testjabber',
+            'date_of_birth':'2013-11-11',
+            'email':'testemail@gmail.com',
+            'jabber':'testjabber@gmail.com',
             'skype':'testskype',
-            'other_contacts':'test other contacts',
-            'photo':open(os.path.join(settings.MEDIA_ROOT,'me.jpg'))
+            'other_contacts':'test_other_contacts',
+            'photo':open(os.path.join(settings.MEDIA_ROOT,'me.jpg')),
         }
         self.client.post('/editbio/',data_dict)
-        resp = self.client.get('/')
-        for data in data_dict.values()[:-1]:
-            self.assertIn(data,resp.content)
+        resp=self.client.get('/editbio/')
+        for key,data in data_dict.iteritems():
+            if key!='photo':
+                self.assertIn(data,resp.content)
 
     def test_check_data(self):
         self.login_test()
