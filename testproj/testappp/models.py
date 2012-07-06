@@ -64,5 +64,6 @@ try:
         pre_delete.connect(delete_handler, model)
         post_save.connect(save_handler, model)
 except Exception,e:
+    print e
     pass #error on syncdb
 
