@@ -69,7 +69,7 @@ class FormTest(TestCase):
     def login_test(self):
         resp = self.client.get('/')
         self.assertIn('Edit',resp.content)
-        self.client.login(username='lex',password='123123')
+        self.client.login(username='admin',password='admin')
 
     def edit_form_test(self):
         data_dict={
@@ -97,7 +97,7 @@ class TagTest(TestCase):
     def login_test(self):
         resp = self.client.get('/')
         self.assertIn('Edit',resp.content)
-        self.client.login(username='lex',password='123123')
+        self.client.login(username='admin',password='admin')
 
     def test_check_data(self):
         self.login_test()
