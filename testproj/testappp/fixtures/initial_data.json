@@ -4,10 +4,10 @@
     "model": "testappp.biomodel", 
     "fields": {
       "bio": "\u0421\u0442\u0443\u0434\u0435\u043d\u0442", 
-      "photo": "photo/P4300111.png", 
+      "photo": "photo/me.jpg", 
       "name": "\u041a\u043e\u043d\u0441\u0442\u0430\u043d\u0442\u0438\u043d", 
       "lastname": "\u0421\u043d\u0456\u0433\u0438\u0440", 
-      "other_contacts": "\u041d\u0435\u043c\u0430\u0454", 
+      "other_contacts": "123", 
       "date_of_birth": "1989-03-28", 
       "skype": "konstantin.snigyr", 
       "jabber": "konstantin.lex@gmail.com", 
@@ -15,19 +15,1555 @@
     }
   }, 
   {
-    "pk": 13, 
+    "pk": 207, 
     "model": "testappp.requestmodel", 
     "fields": {
-      "create_data": "2012-07-06 03:20:42", 
+      "create_data": "2012-07-07 03:39:23", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 206, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:39:23", 
       "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
     }
   }, 
   {
-    "pk": 12, 
+    "pk": 205, 
     "model": "testappp.requestmodel", 
     "fields": {
-      "create_data": "2012-07-06 03:20:42", 
-      "body": "GET 127.0.0.1:8000/admin/testappp/biomodel/ 200"
+      "create_data": "2012-07-07 03:39:23", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/ 200"
+    }
+  }, 
+  {
+    "pk": 204, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:39:22", 
+      "body": "POST 127.0.0.1:8000/admin/auth/user/1/ 302"
+    }
+  }, 
+  {
+    "pk": 203, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:39:12", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 202, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:39:12", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 201, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:39:12", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/1/ 200"
+    }
+  }, 
+  {
+    "pk": 200, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:39:11", 
+      "body": "POST 127.0.0.1:8000/admin/auth/user/1/password/ 302"
+    }
+  }, 
+  {
+    "pk": 199, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:45", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 198, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:45", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 197, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:45", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/1/password/ 200"
+    }
+  }, 
+  {
+    "pk": 196, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:43", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 195, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:41", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 194, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:40", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/1/ 200"
+    }
+  }, 
+  {
+    "pk": 193, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:38", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 192, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:38", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 191, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:37", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/ 200"
+    }
+  }, 
+  {
+    "pk": 190, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:37", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 189, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:36", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 188, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:35", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 187, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:34", 
+      "body": "GET 127.0.0.1:8000/admin/auth/group/ 200"
+    }
+  }, 
+  {
+    "pk": 186, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:32", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 185, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-07 03:38:29", 
+      "body": "GET 127.0.0.1:8000/admin/ 200"
+    }
+  }, 
+  {
+    "pk": 184, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:44:31", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 183, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:44:31", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 182, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:44:31", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/1/ 200"
+    }
+  }, 
+  {
+    "pk": 181, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:32", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 180, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:32", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 179, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:31", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 178, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:24", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 177, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:24", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 176, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:24", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 175, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:12", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 174, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:12", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 173, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:12", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 172, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:06", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 171, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:06", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 170, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:42:05", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 169, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:37", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 168, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:37", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 167, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:36", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 166, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:31", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 165, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:31", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 164, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:31", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 163, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:25", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 162, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:25", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 161, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:41:24", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 160, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:54", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 159, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:53", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 158, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:51", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 157, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:50", 
+      "body": "GET 127.0.0.1:8000/admin/auth/user/1/ 200"
+    }
+  }, 
+  {
+    "pk": 156, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:47", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 155, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:47", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 154, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:46", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 153, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:34", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 152, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:39:34", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 151, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:35:24", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 150, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:35:23", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 149, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:35:22", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 148, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:35:21", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 147, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:54", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 146, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:53", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 145, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:26", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 144, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:24", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 143, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:23", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 142, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:19", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 141, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:19", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 140, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:32:18", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 139, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:31:26", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 138, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:31:25", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 137, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:31:02", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 136, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:31:01", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 135, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:29:19", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 134, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:29:18", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 133, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:25:49", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 132, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:25:49", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 131, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:25:47", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 130, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:25:46", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 129, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:24:57", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 128, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 08:24:56", 
+      "body": "GET 127.0.0.1:8000/ 500"
+    }
+  }, 
+  {
+    "pk": 127, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:20", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 126, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:20", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 125, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:19", 
+      "body": "POST 127.0.0.1:8000/accounts/login/ 302"
+    }
+  }, 
+  {
+    "pk": 124, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:15", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 123, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:14", 
+      "body": "GET 127.0.0.1:8000/accounts/login/ 200"
+    }
+  }, 
+  {
+    "pk": 122, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:14", 
+      "body": "GET 127.0.0.1:8000/editbio/ 302"
+    }
+  }, 
+  {
+    "pk": 121, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:11", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 120, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:11", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 119, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:07", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 118, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:25:06", 
+      "body": "GET 127.0.0.1:8000/admin/logout/ 200"
+    }
+  }, 
+  {
+    "pk": 117, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:16", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 116, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:15", 
+      "body": "GET 127.0.0.1:8000/accounts/profile/ 404"
+    }
+  }, 
+  {
+    "pk": 115, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:15", 
+      "body": "POST 127.0.0.1:8000/accounts/login/ 302"
+    }
+  }, 
+  {
+    "pk": 114, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:05", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 113, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:04", 
+      "body": "GET 127.0.0.1:8000/accounts/login/ 200"
+    }
+  }, 
+  {
+    "pk": 112, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:03", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 111, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:02", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 110, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:24:02", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 109, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:58", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 108, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:57", 
+      "body": "GET 127.0.0.1:8000/admin/logout/ 200"
+    }
+  }, 
+  {
+    "pk": 107, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:54", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 106, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:52", 
+      "body": "GET 127.0.0.1:8000/admin/ 200"
+    }
+  }, 
+  {
+    "pk": 105, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:32", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 104, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:32", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 103, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:31", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 102, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:28", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 101, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:28", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:28", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 99, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:20", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 98, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:20", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 97, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:20", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 96, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:07", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 95, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:06", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 94, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:23:06", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 93, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:59", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 92, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:58", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 91, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:33", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 90, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:32", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 89, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:32", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 88, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:27", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 87, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:26", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 86, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:26", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 85, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:11", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 84, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:11", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 83, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:10", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 82, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:05", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 81, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:05", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 80, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:22:05", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 79, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:56", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 78, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:56", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 77, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:55", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 76, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:45", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 75, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:45", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 74, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:45", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 73, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:34", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:33", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:21:32", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:19:55", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 69, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:19:54", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 68, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:19:53", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 67, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:19:52", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 66, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 05:19:51", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 65, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:40", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 64, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:40", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:39", 
+      "body": "POST 127.0.0.1:8000/editbio/ 302"
+    }
+  }, 
+  {
+    "pk": 62, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:35", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:35", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:29", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:28", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 04:03:28", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:25", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:25", 
+      "body": "GET 127.0.0.1:8000/media/photo/me.jpg 200"
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:25", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:24", 
+      "body": "POST 127.0.0.1:8000/editbio/ 302"
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:12", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:12", 
+      "body": "POST 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:59:00", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:58:59", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:58:30", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:58:30", 
+      "body": "GET 127.0.0.1:8000/media/photo/P4300111.png 200"
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:58:30", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:51:08", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:51:08", 
+      "body": "GET 127.0.0.1:8000/media/photo/P4300111.png 200"
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:51:07", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:47:11", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:47:10", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:46:34", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:46:34", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:46", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:46", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:45", 
+      "body": "POST 127.0.0.1:8000/editbio/ 302"
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:36", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:36", 
+      "body": "GET 127.0.0.1:8000/media/photo/P4300111.png 200"
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:35", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:32", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:15", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:15", 
+      "body": "GET 127.0.0.1:8000/media/photo/P4300111.png 200"
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:11", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:45:10", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:48", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:47", 
+      "body": "GET 127.0.0.1:8000/media/photo/P4300111.png 404"
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:46", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:44", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:25", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:24", 
+      "body": "GET 127.0.0.1:8000/media/photo/P4300111.png 404"
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:43:24", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:40:18", 
+      "body": "GET 127.0.0.1:8000/favicon.ico 404"
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:40:17", 
+      "body": "GET 127.0.0.1:8000/editbio/ 500"
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:34:48", 
+      "body": "GET 127.0.0.1:8000/editbio/ 200"
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:34:43", 
+      "body": "GET 127.0.0.1:8000/ 200"
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:22:18", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:22:18", 
+      "body": "GET 127.0.0.1:8000/admin/testappp/biomodel/1/ 200"
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:22:17", 
+      "body": "POST 127.0.0.1:8000/admin/testappp/biomodel/1/ 302"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:22:14", 
+      "body": "GET 127.0.0.1:8000/admin/testappp/biomodel/1/ 200"
     }
   }, 
   {
@@ -39,11 +1575,27 @@
     }
   }, 
   {
-    "pk": 10, 
+    "pk": 12, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:20:42", 
+      "body": "GET 127.0.0.1:8000/admin/testappp/biomodel/ 200"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:20:42", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+    }
+  }, 
+  {
+    "pk": 8, 
     "model": "testappp.requestmodel", 
     "fields": {
       "create_data": "2012-07-06 03:20:38", 
-      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
+      "body": "POST 127.0.0.1:8000/admin/testappp/biomodel/1/ 302"
     }
   }, 
   {
@@ -55,11 +1607,11 @@
     }
   }, 
   {
-    "pk": 8, 
+    "pk": 10, 
     "model": "testappp.requestmodel", 
     "fields": {
       "create_data": "2012-07-06 03:20:38", 
-      "body": "POST 127.0.0.1:8000/admin/testappp/biomodel/1/ 302"
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
     }
   }, 
   {
@@ -79,19 +1631,19 @@
     }
   }, 
   {
-    "pk": 5, 
-    "model": "testappp.requestmodel", 
-    "fields": {
-      "create_data": "2012-07-06 03:20:13", 
-      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
-    }
-  }, 
-  {
     "pk": 4, 
     "model": "testappp.requestmodel", 
     "fields": {
       "create_data": "2012-07-06 03:20:13", 
       "body": "GET 127.0.0.1:8000/admin/testappp/biomodel/ 200"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "testappp.requestmodel", 
+    "fields": {
+      "create_data": "2012-07-06 03:20:13", 
+      "body": "GET 127.0.0.1:8000/admin/jsi18n/ 200"
     }
   }, 
   {
@@ -596,6 +2148,202 @@
   }, 
   {
     "pk": 69, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "User added pk = 1"
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 22"
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 23"
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 24"
+    }
+  }, 
+  {
+    "pk": 73, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 4"
+    }
+  }, 
+  {
+    "pk": 74, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 5"
+    }
+  }, 
+  {
+    "pk": 75, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 6"
+    }
+  }, 
+  {
+    "pk": 76, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 10"
+    }
+  }, 
+  {
+    "pk": 77, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 11"
+    }
+  }, 
+  {
+    "pk": 78, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 12"
+    }
+  }, 
+  {
+    "pk": 79, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 1"
+    }
+  }, 
+  {
+    "pk": 80, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 2"
+    }
+  }, 
+  {
+    "pk": 81, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 3"
+    }
+  }, 
+  {
+    "pk": 82, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 7"
+    }
+  }, 
+  {
+    "pk": 83, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 8"
+    }
+  }, 
+  {
+    "pk": 84, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 9"
+    }
+  }, 
+  {
+    "pk": 85, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 13"
+    }
+  }, 
+  {
+    "pk": 86, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 14"
+    }
+  }, 
+  {
+    "pk": 87, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 15"
+    }
+  }, 
+  {
+    "pk": 88, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 16"
+    }
+  }, 
+  {
+    "pk": 89, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 17"
+    }
+  }, 
+  {
+    "pk": 90, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 18"
+    }
+  }, 
+  {
+    "pk": 91, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 19"
+    }
+  }, 
+  {
+    "pk": 92, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 20"
+    }
+  }, 
+  {
+    "pk": 93, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 21"
+    }
+  }, 
+  {
+    "pk": 94, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 25"
+    }
+  }, 
+  {
+    "pk": 95, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 26"
+    }
+  }, 
+  {
+    "pk": 96, 
+    "model": "testappp.dblogrecord", 
+    "fields": {
+      "body": "Permission changed pk = 27"
+    }
+  }, 
+  {
+    "pk": 97, 
     "model": "testappp.dblogrecord", 
     "fields": {
       "body": "User added pk = 1"
