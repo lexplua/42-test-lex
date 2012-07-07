@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 __author__ = 'lex'
 from django.test import TestCase
-from testproj.testappp.models import BioModel,DBLogRecord
+from testproj.testappp.models import BioModel,DBLogRecord,RequestModel
 from datetime import datetime
 from random import randrange,choice
 from django.conf import settings
 from django.contrib.auth.models import User
 import os
+from django.core import management
+import sys
 
 class BasicTest(TestCase):
     def test_check_data(self):
@@ -102,3 +104,21 @@ class TagTest(TestCase):
         resp = self.client.get("/")
         self.assertEqual(resp.status_code,200)
         self.assertIn('/admin/auth/user/1/',resp.content)
+
+class CommandTest(TestCase):
+    def test_check_data(self):
+
+        class MyStdOut(object):
+            def __init__(self):
+                self.data = ''
+
+            def write(self, s):
+                self.data += s
+
+        my_out = MyStdOut()
+        sys.stdout = my_out
+        management.call_command('modelscount')
+        self.assertIn("{0} : {1} instanses\n".format("User",User.objects.all().count()),my_out.data)
+        self.assertIn("{0} : {1} instanses\n".format("BioModel",BioModel.objects.all().count()),my_out.data)
+        self.assertIn("{0} : {1} instanses\n".format("DBLogRecord",DBLogRecord.objects.all().count()),my_out.data)
+        self.assertIn("{0} : {1} instanses\n".format("RequestModel",RequestModel.objects.all().count()),my_out.data)
