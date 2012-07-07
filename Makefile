@@ -11,5 +11,5 @@ syncdb:
 	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=testproj.settings $(MANAGE) syncdb --noinput
 
 dump:
-	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=testproj.settings $(MANAGE) dumpdata --indent=2 auth > testproj/fixtures/initial_data.json
+	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=testproj.settings $(MANAGE) dumpdata --indent=2 auth > initial_data.json
 	PYTHONPATH=`pwd` DJANGO_SETTINGS_MODULE=testproj.settings $(MANAGE) dumpdata --indent=2 testappp > testproj/testappp/fixtures/initial_data.json
