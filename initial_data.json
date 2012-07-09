@@ -243,19 +243,73 @@
     }
   }, 
   {
+    "pk": 31, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_dblogrecord", 
+      "name": "Can add db log record", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_dblogrecord", 
+      "name": "Can change db log record", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_dblogrecord", 
+      "name": "Can delete db log record", 
+      "content_type": 11
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "add_requestmodel", 
+      "name": "Can add request model", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "change_requestmodel", 
+      "name": "Can change request model", 
+      "content_type": 10
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "auth.permission", 
+    "fields": {
+      "codename": "delete_requestmodel", 
+      "name": "Can delete request model", 
+      "content_type": 10
+    }
+  }, 
+  {
     "pk": 1, 
     "model": "auth.user", 
     "fields": {
-      "username": "lex", 
+      "username": "admin", 
       "first_name": "", 
       "last_name": "", 
       "is_active": true, 
       "is_superuser": true, 
       "is_staff": true, 
-      "last_login": "2012-07-04 08:42:00", 
+      "last_login": "2012-07-06 05:25:19", 
       "groups": [], 
       "user_permissions": [], 
-      "password": "sha1$16698$8ceaa2d1b0a6d0d6681e2765a25efe3b8c6e88f0", 
+      "password": "sha1$bb677$c678cd46b1e6b9118b8d6d02ec150fbfb994ef37", 
       "email": "konstantin.lex@gmail.com", 
       "date_joined": "2012-07-04 08:41:47"
     }
