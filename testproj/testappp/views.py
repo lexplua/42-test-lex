@@ -1,5 +1,6 @@
-from django.views.generic import DetailView,ListView
+from django.views.generic import DetailView, ListView
 from testproj.testappp.models import *
+
 
 class BioView(DetailView):
     model = BioModel
