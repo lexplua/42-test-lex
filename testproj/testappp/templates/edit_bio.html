@@ -10,7 +10,7 @@
         </div>
     {% endif %}
 
-    <form method="post" action="." class="form-horizontal" enctype="multipart/form-data">
+    <form accept-charset="utf-8" id="edit_form" method="post" action="." class="form-horizontal" enctype="multipart/form-data">
         {% csrf_token %}
         <fieldset >
             <div class="row">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                     <div class="control-group {% if form.photo.errors %} error {% endif %}">
-                        <img src="{{ form.photo.value.url }}" alt="" width="256" style="padding-left: 150px;">
+                        <img id="prev_image" src="{{ form.photo.value.url }}" alt="" width="256" style="padding-left: 150px;">
                     </div>
                 </div>
 
@@ -91,8 +91,9 @@
                 </div>
             </div>
             <div class="form-actions">
-                <button class="btn" type="submit">Сохранить</button>
+                <input type="submit" class="btn"  id="savebtn" value="Сохранить">
             </div>
+            <input type="hidden" name="X_REQUESTED_WITH" value="XMLHttpRequest" />
         </fieldset>
     </form>
 

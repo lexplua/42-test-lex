@@ -6,10 +6,51 @@
     <title>{% block title  %}{% endblock %}</title>
     <link href="{{ static_prefix }}bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="{{ static_prefix }}bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="{{ static_prefix }}css/smoothness/jquery-ui-1.8.21.custom.css" rel="stylesheet">
+    <script type="text/javascript" src="{{ static_prefix }}/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ static_prefix }}js/jquery.form.js"></script>
+    <script type="text/javascript" src="{{ static_prefix }}js/jquery-ui-1.8.21.custom.min.js"></script>
+    <script type="text/javascript" src="{{ static_prefix }}js/jquery.ui.widget.js"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script>
+        $(document).ready(function(){
+
+            $.ajaxSetup({
+                beforeSend: function (request) {
+                    request.setRequestHeader('Accept', 'application/html+ajax');
+                    request.setRequestHeader('X_REQUESTED_WITH', 'XMLHttpRequest');
+                }
+            });
+            $("#edit_form").ajaxForm({
+                beforeSubmit: function(arr, $form, options) {
+                    $('input').prop('readonly','readonly');
+                    $('textarea').prop('readonly','readonly');
+                    $('#loading').css('visibility','visible');
+                },
+                success:function(data){
+                    $('input').prop('readonly','');
+                    $('textarea').prop('readonly','');
+                    $('#loading').css('visibility','hidden');
+                    var model = data[0];
+                    $.each(model['fields'],
+                            function(key,value){
+                                if(key!='photo')
+                                    $('#id_'+key).prop('value',value);
+                                else{
+                                    $('#prev_image').prop('src','/media/'+value);
+                                }
+                            }
+                    )
+                }
+
+            });
+            $('#id_date_of_birth').datepicker({ dateFormat: "dd.mm.yy" });
+        });
+    </script>
 </head>
 <body>
 <div class="container">
+    <img src="/static/img/loading.gif" id="loading"  style="visibility:hidden;left:38%;top: 30%;position: absolute;width: 150px;">
     {% block content %}
     {% endblock %}
 </div>
