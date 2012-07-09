@@ -6,5 +6,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('testproj.testappp.urls')),
 )
-urlpatterns += patterns('django.contrib.staticfiles.views',url(r'^static/(?P<path>.*)$', 'serve'),)
+urlpatterns += patterns('django.contrib.staticfiles.views',
+    url(r'^static/(?P<path>.*)$', 'serve'),
+)
 urlpatterns+=staticfiles_urlpatterns()

@@ -5,4 +5,4 @@ from testproj.testappp.models import BioModel
 class BioModelAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(BioModel,BioModelAdmin)
+admin.site.register(BioModel, BioModelAdmin)
