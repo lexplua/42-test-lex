@@ -7,10 +7,18 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('testproj.testappp.urls')),
-    url(r'^accounts/login/$', 'django.contrib.auth.views.login',{'template_name': 'login.html'},name='login'),
+    url(r'^accounts/login/$',
+        'django.contrib.auth.views.login',
+        {'template_name': 'login.html'},
+        name='login'
+        ),
 )
-urlpatterns += patterns('django.contrib.staticfiles.views',url(r'^static/(?P<path>.*)$', 'serve'),)
-urlpatterns+=staticfiles_urlpatterns()
+urlpatterns += patterns(
+    'django.contrib.staticfiles.views',
+    url(r'^static/(?P<path>.*)$',
+        'serve'),
+)
+urlpatterns += staticfiles_urlpatterns()
 urlpatterns += patterns('',
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
         'document_root': settings.MEDIA_ROOT,
