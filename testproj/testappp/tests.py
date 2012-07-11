@@ -17,7 +17,7 @@ class BasicTest(TestCase):
         test_bio = BioModel.objects.all()[0]
         resp = self.client.get("/")
         self.assertEqual(resp.status_code, 200)
-        for fied, value in test_bio.get_fields()[1:]:
+        for field, value in test_bio.get_fields()[1:]:
             self.assertIn(value, resp.content)
 
 
@@ -73,7 +73,7 @@ class SignalHandlerTest(TestCase):
         bio.save()
         self.assertTrue(
             DBLogRecord.objects.filter(
-                ody__exact="BioModel added pk = {0}".format(bio.pk)
+                body__exact="BioModel added pk = {0}".format(bio.pk)
             ).count())
         bio.name = "other"
         bio.save()
