@@ -165,11 +165,9 @@ class TestAjax(TestCase):
     def login_test(self):
         resp = self.client.get('/')
         self.assertIn('Edit', resp.content)
-        self.client.login(username='admin', password='admin')
+        self.assertTrue(self.client.login(username='admin', password='admin'))
 
     def edit_form_test(self):
-        picker = "ui-datepicker-div"
-        self.assertIn(picker, self.client.get('/editbio/').content)
         data_dict = {
             'name': 'test',
             'lastname': 'testlastname',
@@ -181,12 +179,48 @@ class TestAjax(TestCase):
             'other_contacts': 'test_other_contacts',
             'photo': open(os.path.join(settings.MEDIA_ROOT, 'me.jpg')),
         }
-        self.client.post(
+        resp = self.client.post(
             '/editbio/',
             data_dict,
-            HTTP_X_REQUESTED_WITH='XMLHttpRequest'
+            **{'HTTP_X_REQUESTED_WITH': 'XMLHttpRequest'}
         )
+        print resp.content
         resp = self.client.get('/editbio/')
         for key, data in data_dict.iteritems():
             if key != 'photo':
                 self.assertIn(data, resp.content)
+
+    def test_check_data(self):
+        self.login_test()
+
+
+class TestT13(TestCase):
+
+    def check_test_data(self):
+        self.client.get('/test1/')
+        self.client.get('/test2/')
+        self.client.get('/test3/')
+        self.client.get('/test4/')
+        self.client.get('/test5/')
+        record1 = RequestModel.objects.filter(body__icontains='test1/')[0]
+        record2 = RequestModel.objects.filter(body__icontains='test2/')[0]
+        record3 = RequestModel.objects.filter(body__icontains='test3/')[0]
+        record4 = RequestModel.objects.filter(body__icontains='test4/')[0]
+        record5 = RequestModel.objects.filter(body__icontains='test5/')[0]
+        record1.priority = 1
+        record1.save()
+        record2.priority = 2
+        record2.save()
+        record3.priority = 3
+        record3.save()
+        record4.priority = 4
+        record4.save()
+        record5.priority = 5
+        record5.save()
+
+        testpage = self.client.get('/requests/').content
+
+        self.assertTrue(testpage.index('/test1/') < testpage.index('/test2/'))
+        self.assertTrue(testpage.index('/test2/') < testpage.index('/test3/'))
+        self.assertTrue(testpage.index('/test3/') < testpage.index('/test4/'))
+        self.assertTrue(testpage.index('/test4/') < testpage.index('/test5/'))
