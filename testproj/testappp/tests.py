@@ -195,7 +195,6 @@ class TestAjax(TestCase):
 
 
 class TestT13(TestCase):
-
     def check_test_data(self):
         self.client.get('/test1/')
         self.client.get('/test2/')
