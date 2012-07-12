@@ -26,10 +26,10 @@
                     $('input').prop('readonly','readonly');
                     $('textarea').prop('readonly','readonly');
                     $('#loading').css('visibility','visible');
-                    $('input').html('');
-                    $('textarea').html('');
-                    $('input').parent().parent().addClass('error');
-                    $('input').parent().parent().addClass('error');
+                    $('input').next().html('');
+                    $('textarea').next().html('');
+                    $('input').parent().parent().removeClass('error');
+                    $('textarea').parent().parent().removeClass('error');
                 },
                 success:function(data){
                     $('input').prop('readonly','');
