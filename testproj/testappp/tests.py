@@ -151,17 +151,17 @@ class CommandTest(TestCase):
         )
         self.assertIn(
             "{0} : {1} instanses\n".format(
-                "BioModel", BioModel.objects.all().count()), my_out.data
+                "Biomodel", BioModel.objects.all().count()), my_out.data
         )
         self.assertIn(
             "{0} : {1} instanses\n".format(
-                "DBLogRecord", DBLogRecord.objects.all().count()
+                "Dblogrecord", DBLogRecord.objects.all().count()
             ),
             my_out.data
         )
         self.assertIn(
             "{0} : {1} instanses\n".format(
-                "RequestModel", RequestModel.objects.all().count()
+                "Requestmodel", RequestModel.objects.all().count()
             ),
             my_out.data
         )
