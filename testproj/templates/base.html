@@ -26,6 +26,10 @@
                     $('input').prop('readonly','readonly');
                     $('textarea').prop('readonly','readonly');
                     $('#loading').css('visibility','visible');
+                    $('input').html('');
+                    $('textarea').html('');
+                    $('input').parent().parent().addClass('error');
+                    $('input').parent().parent().addClass('error');
                 },
                 success:function(data){
                     $('input').prop('readonly','');
@@ -46,7 +50,7 @@
                         $.each(model['errors'],
                                 function(key,value){
                                     if(key[0]!='photo'){
-                                        $('#id_'+key).prop('value',value[0]);
+                                        $('#id_'+key).next().html(value[0]);
                                         $('#id_'+key).parent().parent().addClass('error');
                                     }
 
