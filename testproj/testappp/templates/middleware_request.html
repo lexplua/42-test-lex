@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load test_tags %}
 
 {% block title  %}
     42 Coffee Cups Test Assignment
@@ -18,9 +18,16 @@
         <th>
               Request body
         </th>
+        <th>
+            Request priority
+        </th>
+        <th>
+            Change
+        </th>
     </tr>
     </thead>
     <tbody>
+    {% if requests %}
       {% for record in requests %}
           <tr>
               <td>
@@ -28,9 +35,16 @@
               </td>
               <td>
                                   {{ record.body }}
-                            </td>
+              </td>
+              <td>
+            {{ record.priority }}
+              </td>
+          <td>
+              <a class="btn" href="{% edit_link record %}">Change</a>
+          </td>
           </tr>
     {% endfor %}
+    {% endif %}
     </tbody>
     </table>
 {% endblock %}

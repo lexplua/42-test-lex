@@ -7,7 +7,7 @@ class BioModelAdmin(admin.ModelAdmin):
 
 
 class RequestModelAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('priority', 'body')
 
 
 class DBLogRecordAdmin(admin.ModelAdmin):

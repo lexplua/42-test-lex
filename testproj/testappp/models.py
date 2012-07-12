@@ -31,9 +31,10 @@ class BioModel(models.Model):
 class RequestModel(models.Model):
     create_data = models.DateTimeField(auto_now_add=True)
     body = models.TextField()
+    priority = models.IntegerField(default=0)
 
     class Meta:
-        ordering = ['-create_data']
+        ordering = ['-priority', '-create_data']
 
 
 class DBLogRecord(models.Model):
