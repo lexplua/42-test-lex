@@ -32,7 +32,8 @@
                     $('textarea').prop('readonly','');
                     $('#loading').css('visibility','hidden');
                     var model = data[0];
-                    $.each(model['fields'],
+                    if ('fields' in model)
+                        $.each(model['fields'],
                             function(key,value){
                                 if(key!='photo')
                                     $('#id_'+key).prop('value',value);
@@ -40,7 +41,17 @@
                                     $('#prev_image').prop('src','/media/'+value);
                                 }
                             }
-                    )
+                        );
+                    if ('errors' in model)
+                        $.each(model['errors'],
+                                function(key,value){
+                                    if(key[0]!='photo'){
+                                        $('#id_'+key).prop('value',value[0]);
+                                        $('#id_'+key).parent().parent().addClass('error');
+                                    }
+
+                                }
+                        );
                 }
 
             });

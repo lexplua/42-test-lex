@@ -40,3 +40,10 @@ class EditBioView(UpdateView):
             mimetype='text/json',
             content_type='text/html; charset=utf-8'
         )
+    def form_invalid(self, form):
+        errors = json.dumps([{'errors':form.errors},])
+        return HttpResponse(
+            errors,
+            mimetype='text/json',
+            content_type='text/html; charset=utf-8'
+        )
