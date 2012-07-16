@@ -45,18 +45,18 @@ class SignalHandlerTest(TestCase):
         user = User.objects.create_user("testuser", "test@test.ua", "password")
         self.assertTrue(
             DBLogRecord.objects.filter(
-                body__exact="User added pk = {0}".format(user.pk)
+                body__exact="auth: user added pk = {0}".format(user.pk)
             ).count())
         user.is_superuser = True
         user.save()
         self.assertTrue(
             DBLogRecord.objects.filter(
-                body__exact="User changed pk = {0}".format(user.pk)
+                body__exact="auth: user changed pk = {0}".format(user.pk)
             ).count())
         user.delete()
         self.assertTrue(
             DBLogRecord.objects.filter(
-                body__exact="User deleted"
+                body__exact="auth: user deleted"
             ).count())
         bio = BioModel(
             name="Test",
@@ -71,16 +71,16 @@ class SignalHandlerTest(TestCase):
         bio.save()
         self.assertTrue(
             DBLogRecord.objects.filter(
-                body__exact="BioModel added pk = {0}".format(bio.pk)
+                body__exact="testappp: biomodel added pk = {0}".format(bio.pk)
             ).count())
         bio.name = "other"
         bio.save()
         self.assertTrue(
             DBLogRecord.objects.filter(
-                body__exact="BioModel changed pk = {0}".format(bio.pk)
+                body__exact="testappp: biomodel changed pk = {0}".format(bio.pk)
             ).count())
         bio.delete()
         self.assertTrue(
             DBLogRecord.objects.filter(
-                body__exact="BioModel deleted"
+                body__exact="testappp: biomodel deleted"
             ).count())
