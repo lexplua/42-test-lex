@@ -25,7 +25,7 @@ class MiddlewareTest(TestCase):
     def test_check_data(self):
         data = []
         for i in range(5):
-            now_date = datetime.now().strftime("%d/%m/%Y %H:%M")
+            now_date = datetime.now().strftime("%Y-%m-%d %H:%M")
             resp = self.client.get(choice(("/", "/requests/")))
             data.append(now_date)
         resp = self.client.get("/requests/")
